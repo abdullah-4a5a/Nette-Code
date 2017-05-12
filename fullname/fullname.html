@@ -3,71 +3,27 @@
 <head>
 <meta charset=utf-8>
 <title>Volledige Naam</title>
-<style>
-body{
-font-family: "Arial"; 
-}
+<link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+<body>                          
+ <form>
+   <div>
+    <label for="firstname">Voornaam:</label>   
+     <input id="firstname" name="firstname" type="text" placeholder="Voer een voornaam in">
+   </div>
         
-    div { 
-padding: 5px; }
-
-                
-label 
-{ DISPLay: inline-block    ; width:8em
-    ; }
-        
-        
-        #result-fullname {
-            FONT-WEIGHT: bold;
-        }
-    </style>
-        </head>
-
-<Body>                          <form>
-        <div><label for="firstname">Voornaam:</label>   <input ID="firstname" NAME="firstname" type=  text PLACEHOLDER="Voer een voornaam in"></div>
-        
-        <div>
+   <div>
     <label for="lastname">Achternaam:</label>
-<input id="lastname" 
-name="lastname" type="text" placeholder="Voer een achternaam in">
-</div>
+     <input id="lastname" name="lastname" type="text" placeholder="Voer een achternaam in">
+   </div>
         
-<div>
-            <button 
-               type= "button" id   =   "show-fullname">Toon volledige naam</button>
-                
-                </div>
+   <div>
+    <button type="button" id="show-fullname">Toon volledige naam</button>
+   </div>
+ </form>
     
-    </form>
-    
-    <div id="result-fullname"   ></div>
+  <div id="result-fullname"></div>
 
-<script>
-
-        function
-            showFullname() 
-{
-                
-            var firstname = document.getElementById("firstname").value;var lastname = document.getElementById("lastname").value;  
-
-var fullname = getFullName(firstname, lastname);
-            
-                document
-                    .getElementById("result-fullname")
-                .innerHTML = fullname;
-        }
-
-        
-            function getFullName(         firstname, lastname         ) {
-                var fullname = firstname + " " + lastname;
-                return fullname;
-            }
-        
-
-                                                        // button event
-document.getElementById("show-fullname").addEventListener("click", showFullname);
-    
-    </script>  
-
-
-</body></html>
+<script src="myscripts.js"></script>
+</body>
+</html>
