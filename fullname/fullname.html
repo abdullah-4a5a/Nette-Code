@@ -51,18 +51,15 @@ function showFullname(){
  document.getElementById("result-fullname").innerHTML = fullname;
 }
 
+function getFullName(firstname, lastname) {
+ var fullname = firstname + " " + lastname;
+ return fullname;
+}
         
-            function getFullName(         firstname, lastname         ) {
-                var fullname = firstname + " " + lastname;
-                return fullname;
-            }
-        
-
-                                                        // button event
+// button event
 document.getElementById("show-fullname").addEventListener("click", showFullname);
     
- </script>  
-
+</script>  
 
 </body>
 </html>
