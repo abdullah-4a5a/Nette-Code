@@ -25,40 +25,31 @@ font-weight: bold;
 <body>                          
  <form>
    <div>
-     <label for="firstname">Voornaam:</label>   
-      <input id="firstname" name="firstname" type="text" placeholder="Voer een voornaam in">
+    <label for="firstname">Voornaam:</label>   
+     <input id="firstname" name="firstname" type="text" placeholder="Voer een voornaam in">
    </div>
         
-        <div>
+   <div>
     <label for="lastname">Achternaam:</label>
-<input id="lastname" 
-name="lastname" type="text" placeholder="Voer een achternaam in">
-</div>
+     <input id="lastname" name="lastname" type="text" placeholder="Voer een achternaam in">
+   </div>
         
-<div>
-            <button 
-               type= "button" id   =   "show-fullname">Toon volledige naam</button>
-                
-                </div>
+   <div>
+    <button type="button" id="show-fullname">Toon volledige naam</button>
+   </div>
+ </form>
     
-    </form>
-    
-    <div id="result-fullname"   ></div>
+  <div id="result-fullname"></div>
 
 <script>
 
-        function
-            showFullname() 
-{
-                
-            var firstname = document.getElementById("firstname").value;var lastname = document.getElementById("lastname").value;  
-
-var fullname = getFullName(firstname, lastname);
+function showFullname(){
+ var firstname = document.getElementById("firstname").value;
+ var lastname = document.getElementById("lastname").value;  
+ var fullname = getFullName(firstname, lastname);
             
-                document
-                    .getElementById("result-fullname")
-                .innerHTML = fullname;
-        }
+ document.getElementById("result-fullname").innerHTML = fullname;
+}
 
         
             function getFullName(         firstname, lastname         ) {
@@ -70,7 +61,8 @@ var fullname = getFullName(firstname, lastname);
                                                         // button event
 document.getElementById("show-fullname").addEventListener("click", showFullname);
     
-    </script>  
+ </script>  
 
 
-</body></html>
+</body>
+</html>
